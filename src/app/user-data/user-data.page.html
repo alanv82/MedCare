@@ -1,0 +1,32 @@
+<header class="head" >
+  <div class="header">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <div class="header-logo">
+      <img class="logo" src="../../assets/Vector.svg" alt="">
+    </div>
+  </div>
+</header>
+
+<ion-content>
+  <div class="contenido">
+    <div class="form">
+      <div class="phone">
+        <label for="">Teléfono</label>
+        <input [(ngModel)]="telefono" value="{{ telefono }}">
+      </div>
+      <div class="email">
+        <label for="">Email</label>
+        <input type="email" [(ngModel)]="email" value="{{ email }}">
+      </div>
+      <div class="address">
+        <label for="">Dirección</label>
+        <input [(ngModel)]="direccion" value="{{ direccion }}">
+      </div>
+      <div class="save">
+        <ion-button (click)="guardarDatos()" class="button-save" shape="round" color="tertiary"><ion-icon name="save-outline"></ion-icon>Guardar</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

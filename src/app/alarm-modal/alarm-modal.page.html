@@ -1,0 +1,12 @@
+<header>
+</header>
+
+<ion-content [fullscreen]="true">
+  <div class="pick">
+    <ion-datetime presentation="time" hour-cycle="h23" #time></ion-datetime>
+  </div>
+  <div class="buttons">
+    <ion-button (click)="dismissCancelar()">Cancelar</ion-button>
+    <ion-button (click)="btnAceptar(time.value)">Aceptar</ion-button>
+  </div>
+</ion-content>

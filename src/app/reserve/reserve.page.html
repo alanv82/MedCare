@@ -1,0 +1,34 @@
+<header class="head" >
+  <div class="header">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first"></ion-menu-button>
+    </ion-buttons>
+    <div class="header-logo">
+      <img class="logo" src="../../assets/Vector.svg" alt="">
+    </div>
+  </div>
+</header>
+
+<ion-content>
+
+  <div class="content">
+    <div class="title-div">
+      <h1 class="title"> Reserva de horas </h1>
+    </div>
+    <div class="calendar">
+      <ion-datetime locale="es-ES" class="dates" presentation="date" first-day-of-week="1" color="tertiary"
+      #datetime (ngModelChange)="dateSelected(datetime.value)" [(ngModel)]="selectedDate" [min]="minDate" [isDateEnabled]="notSunday">
+        <div slot="title">Seleccione fecha</div>
+      </ion-datetime>
+    </div>
+    <h2>Fecha Reservada</h2>
+    <ion-list class="lista">
+      <ion-item class="item" *ngFor="let item of array_horas_medicas; let i=index">
+        <ion-button slot="end" fill="clear" shape="round" (click)="eliminarHoraMedica(i)">
+          <ion-icon name="trash-outline" color="danger"></ion-icon>
+        </ion-button>
+        {{item}}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

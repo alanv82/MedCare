@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Roboto100';
+  src: url('../assets/fonts/roboto100.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto400';
+  src: url('../assets/fonts/roboto400.woff2') format('woff2');
+}
+
+
+ion-content{
+  --background: linear-gradient(153deg, rgba(255,255,255,1) 73%, rgb(128 255 241) 100%)  !important;
+}
+
+
+.list-menu{
+  height: 100%;
+  background: transparent;
+}
+
+.div-close{
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+

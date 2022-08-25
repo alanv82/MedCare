@@ -1,0 +1,71 @@
+.head{
+    background: white;
+    height: 80px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.header-logo{
+  height: inherit;
+}
+
+.logo{
+  height: 50px;
+  position: relative;
+  bottom: 0px;
+  padding-right: 20px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contedido{
+  justify-content: center;
+}
+
+.medico{
+  height: 10vh;
+  width: 100%;
+
+  img{
+    height: 100%;
+    padding: 0 2vw;
+    float: left;
+  }
+}
+
+.docData{
+  //text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Roboto400;
+}
+
+.ficha{
+  padding-top: 6%;
+  width: 90%;
+  height: max-content;
+  margin:auto;
+  //background-color: rgb(70, 52, 226);
+  border-radius: 10px;
+}
+
+.card{
+  height: inherit;
+}
+
+.card-title{
+  font-size: 1.5rem;
+  font-family: Roboto400;
+  color: black;
+}
+
+.card-content{
+  font-size: 1.2rem;
+  font-family: Roboto400;
+  color: black;
+  padding: 10px 10px 10px 0;
+}

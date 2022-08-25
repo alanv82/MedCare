@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main" type="push">
+    <ion-header>
+      <ion-toolbar color="secondary">
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list class="list-menu">
+        <ion-menu-toggle auto-hide="true">
+          <ion-item (click)="toHome()">
+             <ion-icon name="home" slot="start"></ion-icon>
+             <ion-label>Inicio</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item (click)="toProfile()" >
+            <ion-icon name="medical" slot="start" color="danger"></ion-icon>
+            <ion-label>Perfil Médico</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item (click)="toUserData()">
+            <ion-icon name="document-text" slot="start"></ion-icon>
+            <ion-label>Datos de contacto</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <div class="div-close">
+          <ion-button class="button-close" color="danger" shape="round" size="default" (click)="cerrarSesion()">Cerrar Sesión</ion-button>
+        </div>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
